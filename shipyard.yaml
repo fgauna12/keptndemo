@@ -17,4 +17,8 @@ spec:
           triggeredOn:
             - event: "qa.delivery.finished"
           tasks:
+            - name: "approval"
+              properties:
+                pass: "manual"
+                warning: "manual"
             - name: "deployment"
